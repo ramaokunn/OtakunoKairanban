@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>御宅の回覧板</title>
+    <style>
+        body {
+            margin: 10;
+            padding: 10;
+            background-color: antiquewhite;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+            position: fixed;
+            top: 60px;
+            right: 0;
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 5;
+            padding: 10;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            right: 40px;
+        }
+
+        nav li {
+            margin-right: 10px;
+            list-style: none;
+            margin: 5;
+            padding: 10;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            right: 40px;
+
+        }
+
+        nav li:last-child {
+            margin-right: 10;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            color: #fff;
+            border-color: #333;
+        }
+        /* MainContent */
+        main {
+            margin-top: 60px;
+            padding: 20px;
+            display: center;
+            justify-content: space-between;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+        }
+
+        /* 広告エリア */
+        .survey-container {
+            width: 200px;
+            height: 350px;
+            overflow-y: scroll;
+            margin-top: 120px;
+        }
+
+        .survey {
+        /* アンケートのスタイル */
+            display: block;
+        }
+
+        .survey-buttons {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .survey-button {
+            width: 30px;
+            height: 30px;
+            background-color: burlywood;
+            border: none;
+        }
+
+        .survey-check {
+            width:50px;
+	        height:50px;
+
+            -webkit-mask-image: url("自己注/asset/AdobeStock_505310582.png");
+
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+
+            mask-image: url("自己注/asset/AdobeStock_505310582.png");
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+
+            background-color: blue;
+        }
+
+        .survey-cross {
+            width:50px;
+	        height:50px;
+            
+            -webkit-mask-image: url("自己注/asset/AdobeStock_505310506.png");
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+
+            mask-image: url("自己注/asset/AdobeStock_505310582.png");
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+
+            background-color: blue;
+        }
+
+        /* 右広告エリア */
+        .advertisement-container {
+            width: 200px;
+            height: 350px;
+            overflow-y: scroll;
+            margin-top: 120px;
+        }
+
+        .main-contents-container{
+            width: 1520px;
+            height: 350px;
+            overflow-y: scroll;
+            margin-top: 120px;
+        }
+
+        .main-contents {
+            margin-top: 120px;
+        }
+
+        .main-contents a {
+            text-size-adjust: 36px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        御宅の回覧板
+    </header>
+    <nav>
+        <li>
+            <form action="#">
+                <input type="text" placeholder="検索...">
+                <button type="submit">検索</button>
+            </form>
+        </li>
+        <ul>
+            <li><a href="#">通知</a></li>
+            <li><a href="#">プロフィール</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <!-- 左アンケートサイドの表示 -->
+        <div class="survey-container">
+            <div class="survey">
+                <h2>あなたはこのサイトに以前訪れたことがある?</h2>
+            </div>
+            <div class="survey-buttons">
+                <a href="#" class="survey-button survey-check"></a>
+                <a href="#" class="survey-button survey-cross"></a>
+            </div>
+        </div>
+        <!-- 右広告サイドの表示 -->
+        <div class="advertisement-container">
+            <div class ="advertisement">
+                <script>
+
+                </script>
+             </div>
+        </div>
+        <!-- 中央メインコンテンツの表示 -->
+        <div class="main-contents-container">
+            <div class="main-contents">
+                <a>このサイトの歩き方</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2023 御宅の回覧板
+    </footer>
+</body>
+
+</html>
