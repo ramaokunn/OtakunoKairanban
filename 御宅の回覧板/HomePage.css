@@ -1,0 +1,50 @@
+body {
+    background-color: wheat;
+}
+
+.header {
+    height: 150px;
+    background-color: lightyellow;
+}
+
+.footer {
+    height: 200px;
+    background: lightyellow;
+    color: #fff;
+    clear: both;
+}
+
+.main-contents,
+.left-navi,
+.right-navi {
+    height: 400px;
+}
+
+.main-contents {
+    background-color: blanchedalmond;
+    color: #fff;
+    float: left;
+    width: 78%;
+    padding: 5px;
+}
+
+.left-navi {
+    background-color: blanchedalmond;
+    color: #fff;
+    width: 18%;
+    float: right;
+    padding : 5px;
+}
+
+.right-navi {
+    background-color: lightyellow;
+    color: #fff;
+    float: right;
+    width: 18%;
+    padding : 5px;
+}
+
+.main {
+    width: 80%;
+    float: right;
+}
